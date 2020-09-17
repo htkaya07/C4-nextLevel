@@ -1,0 +1,91 @@
+/* game board table */
+
+#board td {
+  width: 100px;
+  height: 100px;
+  
+  border: solid 2px #666;
+  box-shadow:5px 10px 20px #888888 inset;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+
+
+
+.piece.p1{
+  /*height: 80px;
+  width: 80px;
+  background-color:red;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow:5px 10px 18px #6b0404 ;*/
+  display: block;
+  background: black;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #ff5c5c, #000);
+  box-shadow:5px 10px 18px rgba(95, 0, 0, 0.76)
+
+}
+.piece.p2{
+  /*height: 80px;
+  width: 80px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow:5px 10px 18px rgba(13, 40, 161, 0.76);*/
+
+  display: block;
+  background: black;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+  box-shadow:5px 10px 18px rgba(13, 40, 161, 0.76)
+}
+
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+  box-shadow:5px 10px 20px whitesmoke inset;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+.container{
+  height: 1000px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, white , gold);
+  box-shadow:5px 10px 20px #888888 inset;
+}
+
+.text-center {
+  color:rgb(36, 58, 0);
+  text-shadow: 19px 19px 14px #000000;
+  padding-top: 100px;
+  font-size: 60px;
+  
+}
+.diy{
+  padding: 160px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  font-family: monospace;
+}
+h1{
+  color: whitesmoke;
+  text-shadow: 19px 19px 14px #000000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
